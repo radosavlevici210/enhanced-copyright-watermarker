@@ -1,0 +1,48 @@
+{
+  "name": "quantum-neural-dashboard-production",
+  "version": "1.0.0",
+  "description": "Production-ready quantum security system with neural dashboard integration",
+  "author": "Ervin Remus Radosavlevici <radosavlevici210@icloud.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radosavlevici210/crystal-computer-production.git"
+  },
+  "main": "app.py",
+  "scripts": {
+    "start": "gunicorn app:app",
+    "dev": "python app.py",
+    "build": "npm run build:react",
+    "build:react": "webpack --mode=production",
+    "test": "python -m pytest",
+    "deploy": "python deploy_production.py"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.8.0",
+    "lucide-react": "^0.263.1",
+    "@tailwindcss/typography": "^0.5.9"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "@babel/core": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.0",
+    "tailwindcss": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.11.0"
+  },
+  "keywords": [
+    "quantum-security",
+    "neural-dashboard",
+    "brain-computer-interface",
+    "production-ready",
+    "real-world-connection",
+    "ervin-radosavlevici"
+  ]
+}
